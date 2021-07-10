@@ -106,15 +106,36 @@
         z = x * y + x + h;
         document.getElementById("opera").innerHTML = z;
     </script>
+
+    <!-- Operators -->
+    <p id="opera"></p>
+    <script>
+        var x = 20;
+        const y = 23;
+        let h = 3;
+        z = x * y + x + h;
+        document.getElementById("opera").innerHTML = z;
+    </script>
+
     <!-- data types -->
     <p id="dtype"></p>
     <script>
-        // const h = 20;
-        let h = "jack";
-        var h = 6 * 7;
+        // const h;
+        let h;
+        h = "jack";
+        h = 6;
         document.getElementById("dtype").innerHTML = h;
     </script>
 
+    <p id="demod"></p>
+
+    <script>
+        var x; // Now x is undefined
+        x = 5; // Now x is a Number
+        x = "John"; // Now x is a String
+
+        document.getElementById("demod").innerHTML = x;
+    </script>
 
 </body>
 
