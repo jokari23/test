@@ -1,15 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+head>
+
+<script>
+    function myFunction() {
+        document.getElementById("demo1").innerHTML = "Image is not working  at All";
+    }
+</script>
+
 </head>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur qui facilis asperiores deserunt ipsum rerum ut maiores amet minus magni molestiae vero dicta, nisi dolorem itaque quia deleniti beatae quisquam.</p>
 
 <body>
+
+    <script>
+        function myFunction2() {
+            document.getElementById("myImage1").innerHTML = " Not working at All";
+        }
+    </script>
+
+    <p id="demo"> introduction to html </p>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML= "Hello jacktone "'> Click here</button>
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button><br>
+
+    <button onclick="document.getElementById('myImage').src='on.jpg'">Turn on the light</button>
+
+    <img id="myImage" src="on.jpg" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='off.jpg'">Turn off the light</button><br>
+
+    <p id="demo1">A Paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <p id="myImage1">Test two.</p>
+    <button onclick="myFunction2()">Turn off the light</button><br>
+
+    <script src="myScript.js"></script>
+    <p id="demo3">external.</p>
+    <button type="button" onclick="myFunction3()">external javascript</button><br>
+    <p id="sum"></p>
+    <script>
+        document.getElementById('sum').innerHTML = 4 + 5;
+    </script>
+
+    <p id="demo4"></p>
+
+    <script>
+        document.getElementById("demo4").innerHTML = 5 + 6;
+    </script>
+    <script>
+        document.write(4 + 6);
+    </script>
+
+    <script>
+        window.alert(6 + 8);
+    </script>
+
+    <script>
+        alert("jack");
+    </script>
+
+    <script>
+        console.log(6 + 7);
+    </script>
+    <button onclick="window.print()">Print this page</button>
+
+    <p>const using arrays</p>
+    <p id="arrays1"></p>
+    <script>
+        const buses = ["volvo"];
+        buses.push("scania", "MAC");
+        buses.push("scania", "MAC");
+        buses[3] = "Macedece";
+        buses[4] = "Mistubishi";
+        document.getElementById("arrays1").innerHTML = buses;
+    </script>
+    <p> const oblects </p>
+    <p id="costobject"></p>
+    <script>
+        const anaimals = {
+            heigh: "11",
+            name: "lion"
+        };
+        // anaimals.name = "dikdik";
+        document.getElementById("costobject").innerHTML = anaimals.name;
+    </script>
+    <!-- coisting -->
+    <p id="cohoisting"></p>
+    <script>
+        carname = "tesla";
+
+        document.getElementById("cohoisting").innerHTML = carname;
+        var carname;
+    </script>
+    <!-- Operators -->
+
+    <p id=""></p>
+    <script>
+    </script>
 
 </body>
 
