@@ -107,6 +107,7 @@
         document.getElementById("opera").innerHTML = z;
     </script>
     <!-- data types -->
+    <!-- dynamic data types don't apply on const variable -->
     <p id="eeror1"></p>
 
     <script>
@@ -125,6 +126,16 @@
         x = "John"; // Now x is a String
 
         document.getElementById("demod").innerHTML = x;
+    </script>
+
+    <!-- boolean operators -->
+    <p id="boooolean"></p>
+    <script>
+        let x = 3;
+        let y = 4;
+        let z = 5;
+        let j = 4;
+        document.getElementById("boooolean").innerHTML = (x == y) + "br" + (z == j) + "br" + (y == j);
     </script>
 </body>
 
