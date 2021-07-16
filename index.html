@@ -163,7 +163,14 @@
         };
         document.getElementById("obj").innerHTML = "My name is " + "" + person.fullname() + "" + "second name " + person.Mname;
     </script>
-
+    <button onclick="myfunction()">try it</button>
+    <p id="strmet">testing string methods</p>
+    <script>
+        function myfunction() {
+            let test = document.getElementById("strmet").innerHTML;
+            document.getElementById("strmet").innerHTML = test.replace("testing ,working");
+        }
+    </script>
 
 </body>
 
