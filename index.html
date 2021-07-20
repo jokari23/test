@@ -163,6 +163,9 @@
         };
         document.getElementById("obj").innerHTML = "My name is " + "" + person.fullname() + "" + "second name " + person.Mname;
     </script>
+    <!-- string methods -->
+    <!-- replace -->
+
     <button onclick="myfunction()">try it</button>
     <p id="strmet">testing string methods</p>
     <script>
@@ -171,6 +174,22 @@
             document.getElementById("strmet").innerHTML = test.replace("methods", "test2");
         }
     </script>
+    <!-- string search -->
+    <p id="jsearch"></p>
+    <script>
+        let str = "this Js locate";
+        document.getElementById("jsearch").innerHTML = str.indexOf("Js");
+    </script>
+
+
+    <!-- lastindext of search -->
+
+    <p id="laindext">not working</p>
+    <script>
+        let strli = "locating the js last index using 'js' lastIndexOF";
+        document.getElementById("laindext").innerHTML = strli.lastIndexOf("last");
+    </script>
+
 
 </body>
 
