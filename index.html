@@ -187,10 +187,41 @@
     <p id="laindext">not working</p>
     <script>
         let strli = "locating the js last index using 'js' lastIndexOF";
-        document.getElementById("laindext").innerHTML = strli.lastIndexOf("last");
+        document.getElementById("laindext").innerHTML = strli.lastIndexOf("one");
+    </script>
+    <!-- indext start from -->
+
+    <p id="indstrart"></p>
+    <script>
+        let strindex = "start indexing from somewhere on the way";
+        document.getElementById("indstrart").innerHTML = strindex.indexOf("somewhere", 13);
+    </script>
+
+    <!-- match text -->
+    <p id="match"></p>
+
+    <script>
+        let matc = "join Cain with a chAIN ";
+        document.getElementById("match").innerHTML = matc.match(/ain/gi);
+    </script>
+    <p id="include"></p>
+    <script>
+        let inci = "This is testing includes";
+        document.getElementById("include").innerHTML = inci.includes("no");
+    </script>
+    <!-- start and ends with -->
+    <p id="startswith"></p>
+    <script>
+        let strend = "hello start and end ";
+        document.getElementById("startswith").innerHTML = strend.endsWith("hello");
     </script>
 
 
+
+
 </body>
+
+
+
 
 </html>
