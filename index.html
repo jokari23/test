@@ -268,6 +268,40 @@
         }
     </script>
 
+    <p id="shift"></p>
+    <button onclick="myFunctionshift()"> click to shift</button>
+    <button onclick="myFunctionunshift()"> click to shift</button>
+    <script>
+        const pickup3 = ["land cruiser", "nissan patrol", "RAM", "MAC"];
+        document.getElementById("shift").innerHTML = pickup3;
+
+        function myFunctionshift() {
+            pickup3.shift();
+            document.getElementById("shift").innerHTML = pickup3;
+        }
+
+        function myFunctionunshift() {
+            pickup3.unshift("zuzuki");
+            document.getElementById("shift").innerHTML = pickup3;
+        }
+    </script>
+
+    <!-- splicing elements  -->
+    <p id="splice"></p>
+    <p id="splice2"></p>
+
+    <button onclick="myFunctionsplice()">splice it </button>
+    <script>
+        const pickup4 = ["land cruiser", "nissan patrol", "RAM", "MAC"];
+        document.getElementById("splice").innerHTML = "Original array before splice" + pickup4;
+
+        function myFunctionsplice() {
+
+            pickup4.splice(1, 3, "Macedece", "volvo");
+            document.getElementById("splice2").innerHTML = "New array after splicing" + pickup4;
+        }
+    </script>
+
 
 
 
