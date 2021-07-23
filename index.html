@@ -216,6 +216,58 @@
         document.getElementById("startswith").innerHTML = strend.endsWith("hello");
     </script>
 
+    <!-- arrays -->
+
+    <p id="arrys"></p>
+    <script>
+        const cars = ["subaru", "Nissan", "zuzuki"];
+        document.getElementById("arrys").innerHTML = cars[0];
+    </script>
+    <!-- adding items to araays -->
+
+    <p id="push"></p>
+    <script>
+        const students = ["jane", "jack", "oka"];
+        document.getElementById("push").innerHTML = students;
+    </script>
+    <!-- array methods-->
+    <!-- changing const to string -->
+    <p id="atos"></p>
+
+    <script>
+        const models = ["s", "plaid", "y"];
+        document.getElementById("atos").innerHTML = models.toString();
+    </script>
+
+    <!-- join method -->
+
+    <p id="join"></p>
+    <script>
+        const model = ["s", "plaid", "y"];
+        document.getElementById("join").innerHTML = model.join(" * ");
+    </script>
+
+    <!-- pop -->
+    <p id="pop1"></p>
+    <p id="pop2"></p>
+    <script>
+        const pickup = ["land cruiser", "nissan patrol", "RAM", "MAC"];
+        document.getElementById("pop1").innerHTML = pickup.pop();
+        document.getElementById("pop2").innerHTML = pickup;
+    </script>
+    <!-- push -->
+    <p id="push2"></p>
+    <button onclick="myFunctionpush()">try push</button>
+    <script>
+        const pickup2 = ["land cruiser", "nissan patrol", "RAM", "MAC"];
+        document.getElementById("push").innerHTML = pickup2;
+
+        function myFunctionpush() {
+            pickup2.push("Xtail");
+            document.getElementById("push2").innerHTML = pickup2;
+        }
+    </script>
+
 
 
 
