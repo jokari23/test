@@ -303,7 +303,23 @@
     </script>
 
 
-
+    <!-- Merging two arrays -->
+    <p id="merge"></p>
+    <script>
+        const herb = ["goat", "sheep", "cow"];
+        const carn = ["dog", "cat", 'lion'];
+        const arr3 = ["Robin", "Morgan"];
+        const anaimal = herb.concat(carn, arr3);
+        document.getElementById("merge").innerHTML = anaimal;
+    </script>
+    <!-- slicing  -->
+    <p id="slice"></p>
+    <script>
+        const grains = ["beans", "maize", "corn", "wheat"];
+        const starch = grains.slice(2);
+        document.getElementById("slice").innerHTML = grains + "<br><br>" + starch;
+    </script>
+    <!-- arays sort -->
 
 </body>
 
