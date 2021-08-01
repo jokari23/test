@@ -320,6 +320,37 @@
         document.getElementById("slice").innerHTML = grains + "<br><br>" + starch;
     </script>
     <!-- arays sort -->
+    <id id="sort"></id> <br>
+    <button onclick="sortFunction()">Click to sort</button>
+    <script>
+        const listsort = ["Orange", "Apple", "Banana", "Mango"];
+        document.getElementById("sort").innerHTML = listsort;
+
+        function sortFunction() {
+            listsort.sort();
+            listsort.reverse();
+            document.getElementById("sort").innerHTML = listsort;
+        }
+    </script>
+
+    <!-- sort number  -->
+
+    <p id="sortnu"></p>
+    <button onclick="sornFuction()">sort number</button>
+    <script>
+        const sornumber = [2, 23, 5, 7, 88];
+        document.getElementById("sortnu").innerHTML = sornumber;
+
+        function sornFuction() {
+            sornumber.sort(function(a, b) {
+                return a - b
+            });
+            document.getElementById("sortnu").innerHTML = sornumber;
+        }
+    </script>
+
+
+
 
 </body>
 
