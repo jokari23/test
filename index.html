@@ -349,12 +349,44 @@
         }
     </script>
 
+    <!-- sorting in randon -->
 
+    <p id="rondmath"></p>
+    <button onclick="rondomFunction()">Rondomize</button>
+    <script>
+        const rondmathnumber = [34, 4, 6, 88, 110];
+        document.getElementById("rondmath").innerHTML = rondmathnumber;
 
+        function rondomFunction() {
+            rondmathnumber.sort(function(a, b) {
+                return 0.5 - Math.random()
+            });
+            document.getElementById("rondmath").innerHTML = rondmathnumber;
+
+        }
+    </script>
+    <!-- Max number -->
+    <p>This is the highest number <span id="maxn"></span></p>
+    <script>
+        const maxanu = [3, 67, 600, 87];
+        document.getElementById("maxn").innerHTML = myarraymax(maxanu);
+
+        function myarraymax(arr) {
+            return Math.max.apply(null, arr);
+        }
+    </script>
+
+    <!-- minmum -->
+    <p>This is lowest number in my array <span id="minarr"></span></p>
+    <script>
+        const minmarr = [3, 67, 600, 87];
+        document.getElementById("minarr").innerHTML = myarraymin(minmarr);
+
+        function myarraymin(marr) {
+            return Math.min.apply(null, marr);
+        }
+    </script>
 
 </body>
-
-
-
 
 </html>
